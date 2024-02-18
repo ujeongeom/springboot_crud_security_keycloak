@@ -34,8 +34,8 @@ jwt:
       principal-attribute: preferred_username
 
 app:
-  cors:
-    allowed-origins: http://localhost:3000
+  # cors:
+  #  allowed-origins: http://localhost:3000
   keycloak:
     server : http://211.252.87.34:40007 # http://211.252.87.34:40007
   #  keycloak:
