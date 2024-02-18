@@ -7,7 +7,6 @@ import org.jasypt.encryption.pbe.config.EnvironmentPBEConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-
 @Slf4j
 @Configuration
 public class JasyptConfig{

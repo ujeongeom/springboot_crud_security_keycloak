@@ -35,7 +35,6 @@ public class EmployeeService {
     }*/
     public List<EmployeeEntity> getEmployeeList() {
         log.info("Request to get all Employees");
-        log.info("h2 password : " + h2Password );
         List<EmployeeEntity> employeeList = new ArrayList<>();
         employeeRepository.findAll().forEach(employeeList::add);
         return employeeList;

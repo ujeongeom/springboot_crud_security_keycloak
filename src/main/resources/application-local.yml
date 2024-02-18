@@ -2,7 +2,7 @@
 ### local
 ##############
 server:
-  port: 8080
+  port: 9080
 spring:
   h2:
     # h2 DB
@@ -30,7 +30,7 @@ spring:
         prepStmtCacheSize: 250
         prepStmtCacheSqlLimit: 2048
         useServerPrepStmts: true
-        
+
 # spring boot - actuator expose
 management:
   endpoints:
@@ -54,12 +54,19 @@ app-info:
   app-name: "edu11"
 
 springdoc:
+  show-actuator: true  # actuator swagger 노출
   swagger-ui:
-    operations-sorter: alpha
-    tags-sorter: alpha
+    groups-order: DESC
+    #operations-sorter: alpha
+    #tags-sorter: alpha
     disable-swagger-default-url: true
-    doc-expansion: none
+    #doc-expansion: none
 
 logging:
   level:
     com.kt.edu: trace
+    org.springframework.security: DEBUG
+    org:
+      keycloak:
+        admin:
+          client: DEBUG

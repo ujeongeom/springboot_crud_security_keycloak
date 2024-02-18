@@ -65,12 +65,7 @@
 			<scope>runtime</scope>
 		</dependency>
 	        <!-- maridab -->
-		  <!--dependency>
-                                <groupId>org.mariadb.jdbc</groupId>
-                                <artifactId>mariadb-java-client</artifactId>
-                                <version>2.7.1</version>
-                                <scope>runtime</scope>
-                     </dependency-->
+
 		<dependency>
 		    <groupId>org.mariadb.jdbc</groupId>
 		    <artifactId>mariadb-java-client</artifactId>
@@ -117,11 +112,22 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<!-- Jwt Token -->
+		<!-- Resource Server -->
 		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt</artifactId>
-			<version>0.9.1</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>
+
+		<!-- Keycloak Admin Client -->
+		<!--dependency>
+			<groupId>org.keycloak</groupId>
+			<artifactId>keycloak-admin-client</artifactId>
+			<version>23.0.1</version>
+		</dependency-->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 
 		<dependency>
