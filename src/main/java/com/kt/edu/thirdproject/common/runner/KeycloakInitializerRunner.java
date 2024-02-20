@@ -11,6 +11,7 @@ import org.keycloak.representations.idm.CredentialRepresentation;
 import org.keycloak.representations.idm.RealmRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 @Component
 // KeycloakInitializerRunner 는 realm 생성하고 삭제 반복. 주석 처리하고 수정 생성
-public class KeycloakInitializerRunner { //implements CommandLineRunner {
+public class KeycloakInitializerRunner implements CommandLineRunner {
 
     private final Keycloak keycloakAdmin;
 
