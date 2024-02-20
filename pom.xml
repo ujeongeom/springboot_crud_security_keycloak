@@ -119,11 +119,11 @@
 		</dependency>
 
 		<!-- Keycloak Admin Client -->
-		<!--dependency>
+		<dependency>
 			<groupId>org.keycloak</groupId>
 			<artifactId>keycloak-admin-client</artifactId>
 			<version>23.0.1</version>
-		</dependency-->
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

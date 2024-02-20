@@ -59,5 +59,5 @@ public class WebSecurityConfig {
     }
 
     public static final String EDU_MANAGER = "EDU_MANAGER";
-    public static final String EMP_USER = "EDU_USER";
+    public static final String EDU_USER = "EDU_USER";
 }
