@@ -1,13 +1,12 @@
 create sequence hibernate_sequence;
 
 
-create table employee
+create table EMPLOYEE
 (
-    id              long    not null,
+    id              bigint    not null,
     empName         	varchar(255),
     empDeptName         varchar(255),
     empTelNo         varchar(20),
     empMail         varchar(25)
 );
-
-alter table employee add constraint employee_pk primary key (id);
+alter table EMPLOYEE add constraint EMPLOYEE_PK primary key (id);

@@ -1,46 +1,344 @@
-SPRINGBOOT_SECURITY 13:23:38.780 INFO  org.hibernate.validator.internal.util.Version : - HV000001: Hibernate Validator 8.0.1.Final 
-SPRINGBOOT_SECURITY 13:23:38.808 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Starting ThirdprojectApplication using Java 17.0.9 with PID 15308 (/Users/ujeongeom/springboot-react-keycloak/springboot_crud_security_keycloak/target/classes started by ujeongeom in /Users/ujeongeom/springboot-react-keycloak/springboot_crud_security_keycloak) 
-SPRINGBOOT_SECURITY 13:23:38.809 DEBUG com.kt.edu.thirdproject.ThirdprojectApplication : - Running with Spring Boot v3.2.1, Spring v6.1.2 
-SPRINGBOOT_SECURITY 13:23:38.809 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - The following 1 profile is active: "local" 
-SPRINGBOOT_SECURITY 13:23:38.844 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
-SPRINGBOOT_SECURITY 13:23:38.844 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
-SPRINGBOOT_SECURITY 13:23:39.778 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
-SPRINGBOOT_SECURITY 13:23:39.815 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Finished Spring Data repository scanning in 34 ms. Found 1 JDBC repository interface. 
-SPRINGBOOT_SECURITY 13:23:39.995 INFO  com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor : - Post-processing PropertySource instances 
-SPRINGBOOT_SECURITY 13:23:40.059 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy 
-SPRINGBOOT_SECURITY 13:23:40.059 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
-SPRINGBOOT_SECURITY 13:23:40.059 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
-SPRINGBOOT_SECURITY 13:23:40.060 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 13:23:40.060 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 13:23:40.060 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
-SPRINGBOOT_SECURITY 13:23:40.060 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application-local.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 13:23:40.060 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 13:23:40.060 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 13:23:40.078 INFO  com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter : - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
-SPRINGBOOT_SECURITY 13:23:40.223 INFO  com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver : - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver 
-SPRINGBOOT_SECURITY 13:23:40.225 INFO  com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector : - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector 
-SPRINGBOOT_SECURITY 13:23:40.499 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat initialized with port 9080 (http) 
-SPRINGBOOT_SECURITY 13:23:40.515 INFO  org.apache.coyote.http11.Http11NioProtocol : - Initializing ProtocolHandler ["http-nio-9080"] 
-SPRINGBOOT_SECURITY 13:23:40.517 INFO  org.apache.catalina.core.StandardService : - Starting service [Tomcat] 
-SPRINGBOOT_SECURITY 13:23:40.518 INFO  org.apache.catalina.core.StandardEngine : - Starting Servlet engine: [Apache Tomcat/10.1.17] 
-SPRINGBOOT_SECURITY 13:23:40.573 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring embedded WebApplicationContext 
-SPRINGBOOT_SECURITY 13:23:40.575 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : - Root WebApplicationContext: initialization completed in 1728 ms 
-SPRINGBOOT_SECURITY 13:23:40.670 INFO  com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor : - Found Custom Encryptor Bean org.jasypt.encryption.pbe.StandardPBEStringEncryptor@75a4b18b with name: jasyptStringEncryptor 
-SPRINGBOOT_SECURITY 13:23:40.713 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Starting... 
-SPRINGBOOT_SECURITY 13:23:40.939 INFO  com.zaxxer.hikari.pool.HikariPool : - hikari-cp - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@30d9e43e 
-SPRINGBOOT_SECURITY 13:23:40.940 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Start completed. 
-SPRINGBOOT_SECURITY 13:23:40.951 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration : - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb' 
-SPRINGBOOT_SECURITY 13:23:41.033 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - LogFilter init() 
-SPRINGBOOT_SECURITY 13:23:41.178 INFO  jdbc.sqltiming : - create sequence hibernate_sequence\n {executed in 1 msec} 
-SPRINGBOOT_SECURITY 13:23:41.182 INFO  jdbc.sqltiming : - create table employee ( id long not null, empName varchar(255), empDeptName varchar(255), empTelNo varchar(20), empMail varchar(25) )\n {executed in 2 msec} 
-SPRINGBOOT_SECURITY 13:23:41.185 INFO  jdbc.sqltiming : - alter table employee add constraint employee_pk primary key (id)\n {executed in 3 msec} 
-SPRINGBOOT_SECURITY 13:23:41.319 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : - LiveReload server is running on port 35729 
-SPRINGBOOT_SECURITY 13:23:41.632 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : - Exposing 6 endpoint(s) beneath base path '/actuator' 
-SPRINGBOOT_SECURITY 13:23:41.685 DEBUG org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder : - No authenticationProviders and no parentAuthenticationManager defined. Returning null. 
-SPRINGBOOT_SECURITY 13:23:41.911 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2584a69f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ea527a5, org.springframework.security.web.context.SecurityContextHolderFilter@19208235, org.springframework.security.web.header.HeaderWriterFilter@1f73f2e8, org.springframework.web.filter.CorsFilter@27bb0520, org.springframework.security.web.authentication.logout.LogoutFilter@6bab2637, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@699b62cc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1e9ebce7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1d21c8e2, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@78d63029, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61eb9778, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c2db84e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d912587, org.springframework.security.web.session.SessionManagementFilter@50fce4f0, org.springframework.security.web.access.ExceptionTranslationFilter@2674d269, org.springframework.security.web.access.intercept.AuthorizationFilter@5215a630] 
-SPRINGBOOT_SECURITY 13:23:42.232 INFO  org.apache.coyote.http11.Http11NioProtocol : - Starting ProtocolHandler ["http-nio-9080"] 
-SPRINGBOOT_SECURITY 13:23:42.251 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat started on port 9080 (http) with context path '' 
-SPRINGBOOT_SECURITY 13:23:42.272 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Started ThirdprojectApplication in 3.794 seconds (process running for 9.729) 
-SPRINGBOOT_SECURITY 13:53:12.902 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown initiated... 
-SPRINGBOOT_SECURITY 13:53:12.906 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown completed. 
-SPRINGBOOT_SECURITY 13:53:12.911 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - LogFilter destroy() 
+SPRINGBOOT_SECURITY 17:34:49.997 INFO  org.hibernate.validator.internal.util.Version : - HV000001: Hibernate Validator 8.0.1.Final 
+SPRINGBOOT_SECURITY 17:34:50.028 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Starting ThirdprojectApplication using Java 17.0.9 with PID 20818 (/Users/ujeongeom/springboot-react-keycloak/springboot_crud_security_keycloak/target/classes started by ujeongeom in /Users/ujeongeom/springboot-react-keycloak/springboot_crud_security_keycloak) 
+SPRINGBOOT_SECURITY 17:34:50.029 DEBUG com.kt.edu.thirdproject.ThirdprojectApplication : - Running with Spring Boot v3.2.1, Spring v6.1.2 
+SPRINGBOOT_SECURITY 17:34:50.029 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - The following 1 profile is active: "prd" 
+SPRINGBOOT_SECURITY 17:34:50.063 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+SPRINGBOOT_SECURITY 17:34:50.064 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+SPRINGBOOT_SECURITY 17:34:51.053 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+SPRINGBOOT_SECURITY 17:34:51.096 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Finished Spring Data repository scanning in 39 ms. Found 1 JDBC repository interface. 
+SPRINGBOOT_SECURITY 17:34:51.313 INFO  com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor : - Post-processing PropertySource instances 
+SPRINGBOOT_SECURITY 17:34:51.413 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy 
+SPRINGBOOT_SECURITY 17:34:51.414 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
+SPRINGBOOT_SECURITY 17:34:51.414 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
+SPRINGBOOT_SECURITY 17:34:51.415 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 17:34:51.415 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 17:34:51.416 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+SPRINGBOOT_SECURITY 17:34:51.416 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application-prd.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 17:34:51.416 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 17:34:51.416 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 17:34:51.459 INFO  com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter : - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+SPRINGBOOT_SECURITY 17:34:51.667 INFO  com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver : - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver 
+SPRINGBOOT_SECURITY 17:34:51.669 INFO  com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector : - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector 
+SPRINGBOOT_SECURITY 17:34:51.978 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat initialized with port 9080 (http) 
+SPRINGBOOT_SECURITY 17:34:51.993 INFO  org.apache.coyote.http11.Http11NioProtocol : - Initializing ProtocolHandler ["http-nio-9080"] 
+SPRINGBOOT_SECURITY 17:34:51.996 INFO  org.apache.catalina.core.StandardService : - Starting service [Tomcat] 
+SPRINGBOOT_SECURITY 17:34:51.997 INFO  org.apache.catalina.core.StandardEngine : - Starting Servlet engine: [Apache Tomcat/10.1.17] 
+SPRINGBOOT_SECURITY 17:34:52.064 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring embedded WebApplicationContext 
+SPRINGBOOT_SECURITY 17:34:52.066 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : - Root WebApplicationContext: initialization completed in 2000 ms 
+SPRINGBOOT_SECURITY 17:34:52.186 INFO  com.zaxxer.hikari.HikariDataSource : - HikariPool-1 - Starting... 
+SPRINGBOOT_SECURITY 17:34:52.364 INFO  com.zaxxer.hikari.pool.HikariPool : - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@32dd5df5 
+SPRINGBOOT_SECURITY 17:34:52.366 INFO  com.zaxxer.hikari.HikariDataSource : - HikariPool-1 - Start completed. 
+SPRINGBOOT_SECURITY 17:34:52.379 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration : - H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://211.43.13.1:32462/edu?user=admin&password=***' 
+SPRINGBOOT_SECURITY 17:34:52.495 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - LogFilter init() 
+SPRINGBOOT_SECURITY 17:34:53.201 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : - LiveReload server is running on port 35729 
+SPRINGBOOT_SECURITY 17:34:53.560 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : - Exposing 1 endpoint(s) beneath base path '/actuator' 
+SPRINGBOOT_SECURITY 17:34:53.616 DEBUG org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder : - No authenticationProviders and no parentAuthenticationManager defined. Returning null. 
+SPRINGBOOT_SECURITY 17:34:53.907 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5eac9f51, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d4bd87d, org.springframework.security.web.context.SecurityContextHolderFilter@453419b4, org.springframework.security.web.header.HeaderWriterFilter@4129b2df, org.springframework.web.filter.CorsFilter@69140aef, org.springframework.security.web.authentication.logout.LogoutFilter@3fd610cf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@781939e8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d7b5bf1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@d8683b8, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@27bc74f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8fa5dde, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@477fdf10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37eac34e, org.springframework.security.web.session.SessionManagementFilter@62de6f62, org.springframework.security.web.access.ExceptionTranslationFilter@dfc6740, org.springframework.security.web.access.intercept.AuthorizationFilter@5db6eaf0] 
+SPRINGBOOT_SECURITY 17:34:54.426 INFO  org.apache.coyote.http11.Http11NioProtocol : - Starting ProtocolHandler ["http-nio-9080"] 
+SPRINGBOOT_SECURITY 17:34:54.446 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat started on port 9080 (http) with context path '' 
+SPRINGBOOT_SECURITY 17:34:54.468 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Started ThirdprojectApplication in 4.746 seconds (process running for 10.612) 
+SPRINGBOOT_SECURITY 17:35:06.023 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+SPRINGBOOT_SECURITY 17:35:06.024 INFO  org.springframework.web.servlet.DispatcherServlet : - Initializing Servlet 'dispatcherServlet' 
+SPRINGBOOT_SECURITY 17:35:06.026 INFO  org.springframework.web.servlet.DispatcherServlet : - Completed initialization in 2 ms 
+SPRINGBOOT_SECURITY 17:35:06.059 DEBUG org.springframework.security.web.FilterChainProxy : - Securing GET /api/v1/employees 
+SPRINGBOOT_SECURITY 17:35:06.205 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
+SPRINGBOOT_SECURITY 17:35:06.205 DEBUG org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider : - Authenticated token 
+SPRINGBOOT_SECURITY 17:35:06.207 DEBUG org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter : - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@44f80015, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_openid, SCOPE_email, ROLE_EDU_USER, ROLE_EDU_MANAGER, SCOPE_profile]] 
+SPRINGBOOT_SECURITY 17:35:06.212 DEBUG org.springframework.security.web.FilterChainProxy : - Secured GET /api/v1/employees 
+SPRINGBOOT_SECURITY 17:35:06.212 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter Start 
+SPRINGBOOT_SECURITY 17:35:06.213 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+SPRINGBOOT_SECURITY 17:35:06.213 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cookie = JSESSIONID=AA4BD3D6D89D12BB57A10CB3CD5951DC 
+SPRINGBOOT_SECURITY 17:35:06.213 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+SPRINGBOOT_SECURITY 17:35:06.213 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+SPRINGBOOT_SECURITY 17:35:06.214 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
+SPRINGBOOT_SECURITY 17:35:06.214 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+SPRINGBOOT_SECURITY 17:35:06.214 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+SPRINGBOOT_SECURITY 17:35:06.214 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
+SPRINGBOOT_SECURITY 17:35:06.214 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+SPRINGBOOT_SECURITY 17:35:06.214 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
+SPRINGBOOT_SECURITY 17:35:06.214 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
+SPRINGBOOT_SECURITY 17:35:06.214 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmNDlGN3EtSm5kV0RmWVU4VFllZzRqMVJSQjR5dzI4b2JWLXZJdkN3d1ZBIn0.eyJleHAiOjE3MDg0MTg0MDUsImlhdCI6MTcwODQxODEwNSwiYXV0aF90aW1lIjoxNzA4NDE3NjQ1LCJqdGkiOiJiZjk1ZTQwMS01MjNmLTRiNTAtYTc5YS1jYjZlNDkxYTc0YTMiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL2VtcGxveWVlLXNlcnZpY2VzIiwic3ViIjoiNjEyZDYwZWQtMjhhYy00ZjQwLTk4MzUtNzdiMjUxNDMzNGM3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZWR1LWFwcCIsIm5vbmNlIjoiMDJlZGQxNjMtY2RjYy00NDE4LThiYzMtZWEyMzRiNzkwMmE5Iiwic2Vzc2lvbl9zdGF0ZSI6Ijg0MmJmMGY5LTAyYjAtNDdhNC1hZWYzLTJjNTFiY2JjMGUxMyIsImFjciI6IjAiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDozMDAwIl0sInJlc291cmNlX2FjY2VzcyI6eyJlZHUtYXBwIjp7InJvbGVzIjpbIkVEVV9VU0VSIiwiRURVX01BTkFHRVIiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiODQyYmYwZjktMDJiMC00N2E0LWFlZjMtMmM1MWJjYmMwZTEzIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiJ9.E2_i4wFfz5rLYajs0ijZcBh_ml63XUncnTaukCJ1c8xVgCGL2PXD-qWwUaO_-BatSKB0v6c7vf5gEp41gRyjeT6dGdnRoch1lBZg1amzG7zqXPaY_XgOQ-sDPkTiUTAj8CipUZQdc1HrtRX-TIJiBP2YrCDcFHuqIMVC-F4hikWACwKRqr9ly5ngWNTVOSWURyyqbbsq6fA2kGJqKlO25A6bOcvFhmp7mTN-NK1mz9trUoGFVC4aclPxEO7ZMUmRzN45WNTWVl6iSMjwDpFhxo1_XJb9O0EGktJpMTkBvnccpyYUjI5vk070cGRa4BiiZwbSaujpfWivXKlOX33Qjw 
+SPRINGBOOT_SECURITY 17:35:06.214 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+SPRINGBOOT_SECURITY 17:35:06.215 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
+SPRINGBOOT_SECURITY 17:35:06.215 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
+SPRINGBOOT_SECURITY 17:35:06.215 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
+SPRINGBOOT_SECURITY 17:35:06.215 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+SPRINGBOOT_SECURITY 17:35:06.216 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+SPRINGBOOT_SECURITY 17:35:06.240 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to get all Employees 
+SPRINGBOOT_SECURITY 17:35:06.370 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter End 
+SPRINGBOOT_SECURITY 17:35:16.233 DEBUG org.springframework.security.web.FilterChainProxy : - Securing GET /api/v1/employees 
+SPRINGBOOT_SECURITY 17:35:16.241 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
+SPRINGBOOT_SECURITY 17:35:16.241 DEBUG org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider : - Authenticated token 
+SPRINGBOOT_SECURITY 17:35:16.242 DEBUG org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter : - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@318abbb, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_openid, SCOPE_email, ROLE_EDU_USER, ROLE_EDU_MANAGER, SCOPE_profile]] 
+SPRINGBOOT_SECURITY 17:35:16.243 DEBUG org.springframework.security.web.FilterChainProxy : - Secured GET /api/v1/employees 
+SPRINGBOOT_SECURITY 17:35:16.243 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter Start 
+SPRINGBOOT_SECURITY 17:35:16.243 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+SPRINGBOOT_SECURITY 17:35:16.243 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cookie = JSESSIONID=AA4BD3D6D89D12BB57A10CB3CD5951DC 
+SPRINGBOOT_SECURITY 17:35:16.244 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+SPRINGBOOT_SECURITY 17:35:16.244 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+SPRINGBOOT_SECURITY 17:35:16.244 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
+SPRINGBOOT_SECURITY 17:35:16.244 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+SPRINGBOOT_SECURITY 17:35:16.244 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+SPRINGBOOT_SECURITY 17:35:16.244 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
+SPRINGBOOT_SECURITY 17:35:16.244 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+SPRINGBOOT_SECURITY 17:35:16.244 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
+SPRINGBOOT_SECURITY 17:35:16.244 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
+SPRINGBOOT_SECURITY 17:35:16.245 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmNDlGN3EtSm5kV0RmWVU4VFllZzRqMVJSQjR5dzI4b2JWLXZJdkN3d1ZBIn0.eyJleHAiOjE3MDg0MTg0MTYsImlhdCI6MTcwODQxODExNiwiYXV0aF90aW1lIjoxNzA4NDE4MTE1LCJqdGkiOiIzYjQ2NWE4NS1mNWVkLTRhMDEtOTdjOS1mMDRhMDYzNTk2YjgiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL2VtcGxveWVlLXNlcnZpY2VzIiwic3ViIjoiNjEyZDYwZWQtMjhhYy00ZjQwLTk4MzUtNzdiMjUxNDMzNGM3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZWR1LWFwcCIsIm5vbmNlIjoiMDk2MzRiNmYtYmY4NC00YjU2LThhMjUtMTRiNzgxYjljZmVmIiwic2Vzc2lvbl9zdGF0ZSI6IjJmYmI0YzZkLWJmNTktNDZiMy05ZmMzLTZkYmYyZTdjNmRlYyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDozMDAwIl0sInJlc291cmNlX2FjY2VzcyI6eyJlZHUtYXBwIjp7InJvbGVzIjpbIkVEVV9VU0VSIiwiRURVX01BTkFHRVIiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMmZiYjRjNmQtYmY1OS00NmIzLTlmYzMtNmRiZjJlN2M2ZGVjIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiJ9.jQapzfukTX19--D26kWVKlwpqfgf9raFzad6u7HBgjEfNcwlyLOsM1Jc-20o4wgl6yONoIgXpgG2iNrenENy6JHlEfGz3DJm1tPRMCw7RMkafq1KqTzP5l4-Dp08g-C6E6s-y3j3dKSqWcht8_xoKGo9OUtXCX1IyT69cHjruc0JErJG7x4bX11sjB-rBSTpPkJjOTbGeIlpnQk6gqi-gtgjlJf2nxNnSkVoXHvKzglmG12t2SiRtqTqlB2wwZjuo8i5Lhv7dAW-HB2hf978MvXvM-gd3LZkWDV643P1jkeKtBYtzURLgLCwgrYxZriAr3ZyR2kqWbhiIATqU5nlDQ 
+SPRINGBOOT_SECURITY 17:35:16.245 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+SPRINGBOOT_SECURITY 17:35:16.245 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
+SPRINGBOOT_SECURITY 17:35:16.245 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
+SPRINGBOOT_SECURITY 17:35:16.245 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
+SPRINGBOOT_SECURITY 17:35:16.245 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+SPRINGBOOT_SECURITY 17:35:16.245 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+SPRINGBOOT_SECURITY 17:35:16.256 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to get all Employees 
+SPRINGBOOT_SECURITY 17:35:16.272 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter End 
+SPRINGBOOT_SECURITY 17:35:34.003 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /api/v1/employees 
+SPRINGBOOT_SECURITY 17:35:34.015 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
+SPRINGBOOT_SECURITY 17:35:34.015 DEBUG org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider : - Authenticated token 
+SPRINGBOOT_SECURITY 17:35:34.016 DEBUG org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter : - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@318abbb, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_openid, SCOPE_email, ROLE_EDU_USER, ROLE_EDU_MANAGER, SCOPE_profile]] 
+SPRINGBOOT_SECURITY 17:35:34.021 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /api/v1/employees 
+SPRINGBOOT_SECURITY 17:35:34.021 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter Start 
+SPRINGBOOT_SECURITY 17:35:34.021 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+SPRINGBOOT_SECURITY 17:35:34.021 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cookie = JSESSIONID=AA4BD3D6D89D12BB57A10CB3CD5951DC 
+SPRINGBOOT_SECURITY 17:35:34.021 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+SPRINGBOOT_SECURITY 17:35:34.021 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+SPRINGBOOT_SECURITY 17:35:34.021 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
+SPRINGBOOT_SECURITY 17:35:34.021 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+SPRINGBOOT_SECURITY 17:35:34.021 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+SPRINGBOOT_SECURITY 17:35:34.021 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:3000 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmNDlGN3EtSm5kV0RmWVU4VFllZzRqMVJSQjR5dzI4b2JWLXZJdkN3d1ZBIn0.eyJleHAiOjE3MDg0MTg0MTYsImlhdCI6MTcwODQxODExNiwiYXV0aF90aW1lIjoxNzA4NDE4MTE1LCJqdGkiOiIzYjQ2NWE4NS1mNWVkLTRhMDEtOTdjOS1mMDRhMDYzNTk2YjgiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL2VtcGxveWVlLXNlcnZpY2VzIiwic3ViIjoiNjEyZDYwZWQtMjhhYy00ZjQwLTk4MzUtNzdiMjUxNDMzNGM3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZWR1LWFwcCIsIm5vbmNlIjoiMDk2MzRiNmYtYmY4NC00YjU2LThhMjUtMTRiNzgxYjljZmVmIiwic2Vzc2lvbl9zdGF0ZSI6IjJmYmI0YzZkLWJmNTktNDZiMy05ZmMzLTZkYmYyZTdjNmRlYyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDozMDAwIl0sInJlc291cmNlX2FjY2VzcyI6eyJlZHUtYXBwIjp7InJvbGVzIjpbIkVEVV9VU0VSIiwiRURVX01BTkFHRVIiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMmZiYjRjNmQtYmY1OS00NmIzLTlmYzMtNmRiZjJlN2M2ZGVjIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiJ9.jQapzfukTX19--D26kWVKlwpqfgf9raFzad6u7HBgjEfNcwlyLOsM1Jc-20o4wgl6yONoIgXpgG2iNrenENy6JHlEfGz3DJm1tPRMCw7RMkafq1KqTzP5l4-Dp08g-C6E6s-y3j3dKSqWcht8_xoKGo9OUtXCX1IyT69cHjruc0JErJG7x4bX11sjB-rBSTpPkJjOTbGeIlpnQk6gqi-gtgjlJf2nxNnSkVoXHvKzglmG12t2SiRtqTqlB2wwZjuo8i5Lhv7dAW-HB2hf978MvXvM-gd3LZkWDV643P1jkeKtBYtzURLgLCwgrYxZriAr3ZyR2kqWbhiIATqU5nlDQ 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-type = application/json 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 62 
+SPRINGBOOT_SECURITY 17:35:34.022 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
+SPRINGBOOT_SECURITY 17:35:34.023 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
+SPRINGBOOT_SECURITY 17:35:34.023 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+SPRINGBOOT_SECURITY 17:35:34.023 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+SPRINGBOOT_SECURITY 17:35:34.024 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [{"empName":"1","empDeptName":"1","empTelNo":"1","empMail":"1"}] LogFilter doFilter Body 
+SPRINGBOOT_SECURITY 17:35:34.071 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to create Employee : EmployeeEntity(id=null, empName=1, empDeptName=1, empTelNo=1, empMail=1, isNew=false) 
+SPRINGBOOT_SECURITY 17:35:34.071 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Active Springboot Profile : prd 
+SPRINGBOOT_SECURITY 17:35:34.088 WARN  org.mariadb.jdbc.message.server.ErrorPacket : - Error: 1064-42000: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''hibernate_sequence')' at line 1 
+SPRINGBOOT_SECURITY 17:35:34.114 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter End 
+SPRINGBOOT_SECURITY 17:35:34.116 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] : - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT nextval ('hibernate_sequence');\n]] with root cause 
+java.sql.SQLSyntaxErrorException: (conn=213572) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''hibernate_sequence')' at line 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:282) ~[mariadb-java-client-3.2.0.jar:?]
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:370) ~[mariadb-java-client-3.2.0.jar:?]
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:134) ~[mariadb-java-client-3.2.0.jar:?]
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:883) ~[mariadb-java-client-3.2.0.jar:?]
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:822) ~[mariadb-java-client-3.2.0.jar:?]
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:741) ~[mariadb-java-client-3.2.0.jar:?]
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:665) ~[mariadb-java-client-3.2.0.jar:?]
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:92) ~[mariadb-java-client-3.2.0.jar:?]
+	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:291) ~[mariadb-java-client-3.2.0.jar:?]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:?]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:732) ~[spring-jdbc-6.1.2.jar:6.1.2]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.1.2.jar:6.1.2]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:723) ~[spring-jdbc-6.1.2.jar:6.1.2]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:748) ~[spring-jdbc-6.1.2.jar:6.1.2]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:804) ~[spring-jdbc-6.1.2.jar:6.1.2]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForObject(NamedParameterJdbcTemplate.java:252) ~[spring-jdbc-6.1.2.jar:6.1.2]
+	at org.springframework.data.jdbc.repository.query.AbstractJdbcQuery.lambda$singleObjectQuery$1(AbstractJdbcQuery.java:130) ~[spring-data-jdbc-3.2.1.jar:3.2.1]
+	at org.springframework.data.jdbc.repository.query.StringBasedJdbcQuery.execute(StringBasedJdbcQuery.java:145) ~[spring-data-jdbc-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249) ~[spring-aop-6.1.2.jar:6.1.2]
+	at jdk.proxy4/jdk.proxy4.$Proxy153.retvNextVal(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249) ~[spring-aop-6.1.2.jar:6.1.2]
+	at jdk.proxy4/jdk.proxy4.$Proxy153.retvNextVal(Unknown Source) ~[?:?]
+	at com.kt.edu.thirdproject.employee.service.EmployeeService.create(EmployeeService.java:56) ~[classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.2.jar:6.1.2]
+	at com.kt.edu.thirdproject.employee.service.EmployeeService$$SpringCGLIB$$0.create(<generated>) ~[classes/:?]
+	at com.kt.edu.thirdproject.employee.controller.EmployeeController.create(EmployeeController.java:40) ~[classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.17.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.17.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at com.kt.edu.thirdproject.common.filter.LogFilter.doFilter(LogFilter.java:50) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:145) ~[spring-security-oauth2-resource-server-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+SPRINGBOOT_SECURITY 17:35:34.135 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /error 
+SPRINGBOOT_SECURITY 17:35:34.138 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /error 
