@@ -3,15 +3,15 @@ def gitBranch = 'master'
 def docker_registry = "ghcr.io"  
 
 // 본인 이미지 사용
-def imageName = "ghcr.io/shclub/edu12-backend"
-def fromImage = "ghcr.io/shclub/jre17-runtime:v1.0.0"
-def git_ops_name = "edu12-backend-gitops"
+def imageName = "ghcr.io/ujeongeom/springboot_crud_security_keycloak:master"
+def fromImage = "ghcr.io/ujeongeom/vue_crud_security_keycloak:master"
+def git_ops_name = "app-of-apps-keycloak"
 // 본인 Namespace
-def P_NAMESPACE = "edu30"
+def P_NAMESPACE = "default"
 // 본인 slave pvc
-def P_SLAVE_PVC = "jenkins-edu-slave-pvc"
+def P_SLAVE_PVC = "jenkins-edu5-slave-pvc"
 // 본인 이메일
-def P_EMAIL = "shclub@gmail.com"
+def P_EMAIL = "djadbwjd0403@gmail.com"
 
 
 def TAG = getTag(gitBranch)
@@ -42,7 +42,7 @@ podTemplate(label: label, serviceAccount: 'jenkins-admin', namespace: P_NAMESPAC
                      
       stage('Maven Build & Image Push ') {
             container('build-tools') {
-               withCredentials([usernamePassword(credentialsId: 'github_ci',usernameVariable: 'USERNAME',passwordVariable: 'PASSWORD')]) {
+               withCredentials([usernamePassword(credentialsId: 'github_ujeongeom',usernameVariable: 'USERNAME',passwordVariable: 'PASSWORD')]) {
                     sh  """
                          ./mvnw clean package jib:build  -Dmaven.test.skip=true  \
                          -Djib.from.image=${fromImage} \
@@ -60,11 +60,11 @@ podTemplate(label: label, serviceAccount: 'jenkins-admin', namespace: P_NAMESPAC
 
         stage('GitOps update') {
             container('build-tools') {
-               withCredentials([usernamePassword(credentialsId: 'github_ci',usernameVariable: 'USERNAME',passwordVariable: 'PASSWORD')]) {
+               withCredentials([usernamePassword(credentialsId: 'github_ujeongeom',usernameVariable: 'USERNAME',passwordVariable: 'PASSWORD')]) {
                     sh """  
                         cd ~
                         git clone https://${USERNAME}:${PASSWORD}@github.com/${USERNAME}/${git_ops_name}
-                        cd ${git_ops_name}
+                        cd ${git_ops_name}/charts/frontend
                         git checkout HEAD
                         kustomize edit set image ${imageName}:${TAG}
                         git config --global user.email ${P_EMAIL}
