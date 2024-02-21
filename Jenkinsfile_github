@@ -19,7 +19,7 @@ def TAG = getTag(gitBranch)
 podTemplate(label: label, serviceAccount: 'jenkins-admin', namespace: P_NAMESPACE,
     containers: [
         containerTemplate(name: 'build-tools', image: 'ghcr.io/shclub/build-tool:v1.0.0', ttyEnabled: true, command: 'cat', privileged: true, alwaysPullImage: true)
-        ,containerTemplate(name: 'jnlp', image: 'ghcr.io/shclub/jenkins/jnlp-slave:latest-jdk11', args: '${computer.jnlpmac} ${computer.name}')
+        ,containerTemplate(name: 'jnlp', image: 'jenkins/inbound-agent:latest', args: '${computer.jnlpmac} ${computer.name}')
     ],
     volumes: [
         hostPathVolume(hostPath: '/etc/containers' , mountPath: '/var/lib/containers' ),
@@ -64,7 +64,7 @@ podTemplate(label: label, serviceAccount: 'jenkins-admin', namespace: P_NAMESPAC
                     sh """  
                         cd ~
                         git clone https://${USERNAME}:${PASSWORD}@github.com/${USERNAME}/${git_ops_name}
-                        cd ${git_ops_name}/charts/frontend
+                        cd ${git_ops_name}/charts/frontend/*
                         git checkout HEAD
                         kustomize edit set image ${imageName}:${TAG}
                         git config --global user.email ${P_EMAIL}
