@@ -5,7 +5,7 @@ public class QueryEmployeeSqls{
 
     //profile is prd ( maria, mysql )
     public static final String RETV_NEXT_VAL="""
-    SELECT nextval ('hibernate_sequence');
+    SELECT NEXTVAL ('hibernate_sequence');
            """;
 
     //profile is local,dev ( h2 )
